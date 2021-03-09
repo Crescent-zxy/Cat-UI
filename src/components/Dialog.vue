@@ -1,0 +1,9 @@
+<template>
+  <div>
+    <p>Dialog的文档</p>
+    <p>Dialog的文档</p>
+    <p>Dialog的文档</p>
+    <p>Dialog的文档</p>
+    <p>Dialog的文档</p>
+  </div>
+</template>
