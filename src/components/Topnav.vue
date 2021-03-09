@@ -1,24 +1,24 @@
 <template>
-    <div class="topnav">
-        <div class="logo">LOGO</div>
-        <ul class="menu">
-            <li>menu1</li>
-            <li>menu2</li>
-        </ul>
-    </div>
+  <div class="topnav">
+    <div class="logo">LOGO</div>
+    <ul class="menu">
+      <li>menu1</li>
+      <li>menu2</li>
+    </ul>
+  </div>
 </template>
 
 <script lang="ts">
-export default {
-    
-}
+export default {};
 </script>
 
 <style lang="scss" scoped>
-    .topnav {
+.topnav {
   background: pink;
   display: flex;
   padding: 16px;
+  position: relative;
+  z-index: 10;
   > .logo {
     max-width: 6em;
     margin-right: auto;
