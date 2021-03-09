@@ -1,3 +1,9 @@
 <template>
-  <div></div>
+  <div>
+    <p>Switch的文档</p>
+    <p>Switch的文档</p>
+    <p>Switch的文档</p>
+    <p>Switch的文档</p>
+    <p>Switch的文档</p>
+  </div>
 </template>
