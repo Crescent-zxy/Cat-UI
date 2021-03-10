@@ -40,6 +40,12 @@
     <Button theme="text">普通文字按钮</Button>
     <Button theme="text" level="danger">危险文字按钮</Button>
   </p>
+  <h2>disabled 示例</h2>
+  <p>
+    <Button disabled>禁用按钮</Button>
+    <Button theme="link" disabled>禁用链接按钮</Button>
+    <Button theme="text" disabled>禁用按钮</Button>
+  </p>
 </template>
 
 <script lang="ts">
