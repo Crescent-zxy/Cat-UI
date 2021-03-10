@@ -3,7 +3,7 @@
   <hr />
   <h2>theme 示例</h2>
   <p>
-    <Button>你好</Button>
+    <Button @click="onClick">你好</Button>
     <Button theme="button">你好</Button>
     <Button theme="link">你好</Button>
     <Button theme="text">你好</Button>
@@ -45,6 +45,11 @@
     <Button disabled>禁用按钮</Button>
     <Button theme="link" disabled>禁用链接按钮</Button>
     <Button theme="text" disabled>禁用按钮</Button>
+  </p>
+  <h2>loading 示例</h2>
+  <p>
+    <Button loading>加载中</Button>
+    <Button>加载完毕</Button>
   </p>
 </template>
 
