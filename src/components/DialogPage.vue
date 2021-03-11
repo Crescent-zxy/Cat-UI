@@ -3,7 +3,12 @@
   <hr />
   <p>
     <Button @click="toggle">toggle</Button>
-    <Dialog :visible="bool"></Dialog>
+    <Dialog
+      v-model:visible="bool"
+      :closeOnClickOverlay="false"
+      :ok="f1"
+      :cancel="f2"
+    ></Dialog>
   </p>
 </template>
 
@@ -18,7 +23,14 @@ export default {
     const toggle = () => {
       bool.value = !bool.value;
     };
-    return { bool, toggle };
+    const f1 = () => {
+      console.log("ok");
+      return true;
+    };
+    const f2 = () => {
+      return true;
+    };
+    return { bool, toggle, f1, f2 };
   },
 };
 </script>
