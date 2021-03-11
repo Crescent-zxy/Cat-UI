@@ -3,9 +3,9 @@
   <hr />
   <h3>示例1</h3>
   <p>
-    <Tabs v-model:selected="x">
+    <Tabs v-model:selected="key">
       <TabPane title="导航1">内容1</TabPane>
-      <TabPane title="导航2">内容2</TabPane>
+      <TabPane title="导航2222">内容2</TabPane>
     </Tabs>
   </p>
 </template>
@@ -17,8 +17,8 @@ import { ref } from "vue";
 export default {
   components: { Tabs, TabPane },
   setup() {
-    const x = ref("导航1");
-    return { x };
+    const key = ref("导航1");
+    return { key };
   },
 };
 </script>
