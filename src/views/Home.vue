@@ -1,21 +1,19 @@
 <template>
-  <div>
-    <Topnav />
-    <div class="banner">
-      <h1>CatUI</h1>
-      <h2>一个基于 Vue3 的 UI 框架</h2>
-      <p class="actions">
-        <a href="">GitHub</a>
-        <router-link to="/doc">开始</router-link>
-      </p>
-    </div>
+  <TopNav />
+  <div class="banner">
+    <h1>CatUI</h1>
+    <h2>一个基于 Vue3 的 UI 框架</h2>
+    <p class="actions">
+      <a href="">GitHub</a>
+      <router-link to="/doc">开始</router-link>
+    </p>
   </div>
 </template>
 
 <script lang="ts">
-import Topnav from "../components/Topnav.vue";
+import TopNav from "../components/TopNav.vue";
 export default {
-  components: { Topnav },
+  components: { TopNav },
 };
 </script>
 
