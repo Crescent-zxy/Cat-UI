@@ -12,8 +12,8 @@
 
 <script lang="ts">
 import Tabs from "../lib/Tabs.vue";
-import Tab from "../lib/TabPane.vue";
+import TabPane from "../lib/TabPane.vue";
 export default {
-  components: { Tabs, Tab },
+  components: { Tabs, TabPane },
 };
 </script>
