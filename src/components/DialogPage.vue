@@ -9,8 +9,13 @@
       :ok="f1"
       :cancel="f2"
     >
-      <p>第一行</p>
-      <p>第二行</p>
+      <template v-slot:title>
+        <h3>标题</h3>
+      </template>
+      <template v-slot:content>
+        <p>第一行</p>
+        <p>第二行</p>
+      </template>
     </Dialog>
   </p>
 </template>
