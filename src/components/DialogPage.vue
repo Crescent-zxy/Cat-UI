@@ -8,7 +8,10 @@
       :closeOnClickOverlay="false"
       :ok="f1"
       :cancel="f2"
-    ></Dialog>
+    >
+      <p>第一行</p>
+      <p>第二行</p>
+    </Dialog>
   </p>
 </template>
 

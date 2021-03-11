@@ -4,12 +4,11 @@
     <div class="cat-dialog-wrapper">
       <div class="cat-dialog">
         <header>
-          标题
+          {{ title }}
           <div @click="close" class="cat-dialog-close"></div>
         </header>
         <main>
-          <p>第一行字</p>
-          <p>第二行字</p>
+          <slot />
         </main>
         <footer>
           <Button @click="ok" level="main">OK</Button>
@@ -24,6 +23,10 @@
 import Button from "./Button.vue";
 export default {
   props: {
+    title: {
+      type: String,
+      default: "标题",
+    },
     visible: {
       type: Boolean,
       default: false,
