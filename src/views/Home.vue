@@ -2,7 +2,7 @@
   <div class="homePage">
     <TopNav />
     <div class="banner">
-      <h1>CatUI</h1>
+      <h1>Cat-UI</h1>
       <h2>一个基于 Vue3 的 UI 框架</h2>
       <p class="actions">
         <a href="">GitHub</a>
@@ -159,18 +159,27 @@ $color: #9d4a5f;
 }
 .features {
   margin: 64px auto;
-  width: 400px;
+  padding: 0 16px;
   @media (min-width: 800px) {
     width: 800px;
+    > ul {
+      > li {
+        width: 50%;
+      }
+    }
   }
   @media (min-width: 1200px) {
     width: 1200px;
+    > ul {
+      > li {
+        width: 33.3333%;
+      }
+    }
   }
   > ul {
     display: flex;
     flex-wrap: wrap;
     > li {
-      width: 400px;
       margin: 16px 0;
       display: grid;
       justify-content: start;
