@@ -5,6 +5,7 @@
         "dist/lib/*"
     ],
     "main": "dist/lib/cat-ui.js",
+    "module": "dist/lib/cat-ui.esm.js",
     "scripts": {
         "dev": "vite",
         "build": "vite build"

@@ -8,7 +8,7 @@ import {
 
 export default {
     input: 'src/lib/index.ts',
-    output: {
+    output: [{
         globals: {
             vue: 'Vue'
         },
@@ -16,7 +16,12 @@ export default {
         file: 'dist/lib/cat-ui.js',
         format: 'umd',
         plugins: [terser()]
-    },
+    }, {
+        name: 'Cat-UI',
+        file: 'dist/lib/cat-ui.esm.js',
+        format: 'es',
+        plugins: [terser()]
+    }],
     plugins: [
         scss({
             include: /\.scss$/,
