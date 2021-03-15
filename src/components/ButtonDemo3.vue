@@ -3,12 +3,12 @@
 </demo>
 <template>
   <div>
-    <div>
+    <div class="border">
       <Button level="main">主要按钮</Button>
       <Button>普通按钮</Button>
       <Button level="danger">危险按钮</Button>
     </div>
-    <div>
+    <div class="border">
       <Button theme="link" level="main">主要链接按钮</Button>
       <Button theme="link">普通链接按钮</Button>
       <Button theme="link" level="danger">危险链接按钮</Button>

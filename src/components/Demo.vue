@@ -76,4 +76,7 @@ $border-color: #d9d9d9;
     }
   }
 }
+.border {
+  border-bottom: 1px solid $border-color;
+}
 </style>

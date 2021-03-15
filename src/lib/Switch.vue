@@ -43,7 +43,7 @@ $h2: $h - 4px;
     transition: all 250ms;
   }
   &.cat-switch-checked {
-    background: #1890ff;
+    background-color: #f29c9f;
   }
   &.cat-switch-checked > span {
     left: calc(100% - #{$h2} - 2px);

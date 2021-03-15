@@ -49,10 +49,10 @@ export default {
       props.closeOnClickOverlay && close();
     };
     const ok = () => {
-      props.ok?.() !== false && close();
+      props.ok && props.ok() !== false && close();
     };
     const cancel = () => {
-      props.cancel?.();
+      props.cancel && props.cancel();
       close();
     };
     return { close, onClickOverlay, ok, cancel };

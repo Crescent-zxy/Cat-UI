@@ -46,7 +46,8 @@ export default {
 $h: 32px;
 $border-color: #d9d9d9;
 $color: #333;
-$blue: #40a9ff;
+$pink: #f29c9f;
+$darkPink: #fa3d7c;
 $radius: 4px;
 $red: red;
 $grey: grey;
@@ -54,6 +55,7 @@ $grey: grey;
   box-sizing: border-box;
   height: $h;
   padding: 0 12px;
+  margin: 10px 5px;
   cursor: pointer;
   display: inline-flex;
   justify-content: center;
@@ -65,13 +67,10 @@ $grey: grey;
   border-radius: $radius;
   box-shadow: 0 1px 0 fade-out(black, 0.95);
   transition: background 250ms;
-  & + & {
-    margin-left: 8px;
-  }
   &:hover,
   &:focus {
-    color: $blue;
-    border-color: $blue;
+    color: $pink;
+    border-color: $pink;
   }
   &:focus {
     outline: none;
@@ -82,10 +81,10 @@ $grey: grey;
   &.cat-theme-link {
     border-color: transparent;
     box-shadow: none;
-    color: $blue;
+    color: $pink;
     &:hover,
     &:focus {
-      color: lighten($blue, 10%);
+      color: lighten($pink, 10%);
     }
   }
   &.cat-theme-text {
@@ -109,13 +108,13 @@ $grey: grey;
   }
   &.cat-theme-button {
     &.cat-level-main {
-      background: $blue;
+      background: $pink;
       color: white;
-      border-color: $blue;
+      border-color: $pink;
       &:hover,
       &:focus {
-        background: darken($blue, 10%);
-        border-color: darken($blue, 10%);
+        background: darken($pink, 10%);
+        border-color: darken($pink, 10%);
       }
     }
     &.cat-level-danger {
@@ -137,6 +136,13 @@ $grey: grey;
     }
   }
   &.cat-theme-link {
+    &.cat-level-main {
+      color: $darkPink;
+      &:hover,
+      &:focus {
+        color: lighten($darkPink, 10%);
+      }
+    }
     &.cat-level-danger {
       color: $red;
       &:hover,
@@ -147,10 +153,10 @@ $grey: grey;
   }
   &.cat-theme-text {
     &.cat-level-main {
-      color: $blue;
+      color: $pink;
       &:hover,
       &:focus {
-        color: darken($blue, 10%);
+        color: darken($pink, 10%);
       }
     }
     &.cat-level-danger {
@@ -174,7 +180,8 @@ $grey: grey;
     display: inline-block;
     margin-right: 4px;
     border-radius: 8px;
-    border-color: $blue $blue $blue transparent;
+    // border-color: #a6d7ff #73c0ff #40a9ff transparent;
+    border-color: #f5bcc5 #f5ab9f #f29c9f transparent;
     border-style: solid;
     border-width: 2px;
     animation: cat-spin 1.5s infinite linear;

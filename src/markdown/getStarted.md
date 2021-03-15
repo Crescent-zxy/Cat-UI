@@ -4,7 +4,9 @@
 然后在你的代码中写入下面的代码
 
 ```
-import {Button, Tabs, Tab, Switch, Dialog, openDialog} from "cat-ui"
+import {Button, Tabs, Tab, Switch, Dialog, openDialog} from "cat-ui-zxy"
+// 若样式不生效则手动引入css
+import 'cat-ui-zxy/dist/lib/cat-ui.css'
 ```
 
 就可以使用我提供的组件了。
@@ -20,8 +22,7 @@ import {Button, Tabs, Tab, Switch, Dialog, openDialog} from "cat-ui"
   </div>
 </template>
 <script>
-import {Button, Tabs, Tab, Switch, Dialog, openDialog} from "cat-ui"
-import 'cat-ui/dist/lib/cat-ui.css'
+import {Button, Tabs, Tab, Switch, Dialog, openDialog} from "cat-ui-zxy"
 export default {
   components: {Button}
 }

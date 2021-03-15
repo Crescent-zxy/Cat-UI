@@ -27,3 +27,9 @@ export default {
   },
 };
 </script>
+
+<style lang="scss">
+.border {
+  border-bottom: 1px solid rgb(217, 217, 217);
+}
+</style>

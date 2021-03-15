@@ -24,7 +24,7 @@
 </template>
 
 <script lang="ts">
-import { ref, watchEffect, onMounted, computed } from "vue";
+import { ref, watchEffect, onMounted, computed, Component } from "vue";
 import TabPane from "./TabPane.vue";
 export default {
   props: {
@@ -55,7 +55,7 @@ export default {
 
     const defaults = context.slots.default();
     defaults.forEach((tag) => {
-      if (tag.type !== TabPane) {
+      if ((tag.type as Component).name !== TabPane.name) {
         throw new Error("Tabs 子标签必须是 TabPane");
       }
     });
@@ -80,7 +80,7 @@ export default {
 </script>
 
 <style lang="scss">
-$blue: #40a9ff;
+$pink: #f29c9f;
 $color: #333;
 $border-color: #d9d9d9;
 .cat-tabs {
@@ -97,13 +97,13 @@ $border-color: #d9d9d9;
         margin-left: 0;
       }
       &.selected {
-        color: $blue;
+        color: $pink;
       }
     }
     &-indicator {
       position: absolute;
       height: 3px;
-      background: $blue;
+      background: $pink;
       left: 0;
       bottom: -1px;
       transition: all 250ms;

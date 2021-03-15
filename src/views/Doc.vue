@@ -62,8 +62,8 @@ $aside-index: 10;
   }
   > .content {
     flex-grow: 1;
-    padding-top: 60px;
-    padding-left: 156px;
+    padding-top: 100px;
+    padding-left: 240px;
     @media (max-width: 500px) {
       padding-left: 0;
     }
@@ -77,32 +77,39 @@ $aside-index: 10;
   > main {
     flex-grow: 1;
     padding: 16px;
-    background: white;
+    background: #f9f6f1;
+    color: #370210;
   }
 }
 aside {
-  background: pink;
-  width: 150px;
+  background-color: #f9f6f1;
+  width: 220px;
   padding: 16px 0;
   position: fixed;
-  top: 0;
+  top: 30px;
   left: 0;
   padding-top: 70px;
   height: 100%;
   z-index: $aside-index;
+  box-shadow: 5px 0 5px rgb(51 51 51 / 10%);
   > h2 {
     margin-bottom: 4px;
-    padding: 0 16px;
+    padding: 5px 20px;
+    font-weight: bold;
   }
   > ol {
     > li {
       > a {
         display: block;
-        padding: 4px 16px;
+        padding: 10px 30px;
         text-decoration: none;
+        transition: all 250ms;
       }
       .router-link-active {
-        background: white;
+        color: #f29c9f;
+        font-weight: bold;
+        border-right: 5px solid #f29c9f;
+        padding-left: 50px;
       }
     }
   }
