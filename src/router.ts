@@ -10,6 +10,8 @@ import Markdown from './components/Markdown.vue';
 import intro from './markdown/intro.md'
 import getStarted from './markdown/getStarted.md'
 import install from './markdown/install.md'
+import jiangNan from './markdown/jiangNan.md'
+
 const md = (string, key) => h(Markdown, { content: string, key })
 
 const history = createWebHashHistory()
@@ -29,6 +31,7 @@ export const router = createRouter({
                 { path: 'button', component: ButtonPage },
                 { path: 'dialog', component: DialogPage },
                 { path: 'tabs', component: TabsPage },
+                { path: "jiang-nan", component: md(jiangNan, 'jiangNan') },
             ]
         }
     ]

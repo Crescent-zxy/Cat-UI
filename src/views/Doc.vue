@@ -30,6 +30,12 @@
             <router-link to="/doc/tabs">Tabs 组件</router-link>
           </li>
         </ol>
+        <h2>其他作品</h2>
+        <ol>
+          <li>
+            <router-link to="/doc/jiang-nan">江南百景图</router-link>
+          </li>
+        </ol>
       </aside>
       <main>
         <router-view />
