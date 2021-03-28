@@ -90,14 +90,15 @@ $aside-index: 10;
 aside {
   background-color: #f9f6f1;
   width: 220px;
-  padding: 16px 0;
   position: fixed;
   top: 30px;
   left: 0;
   padding-top: 70px;
+  padding-bottom: 50px;
   height: 100%;
   z-index: $aside-index;
   box-shadow: 5px 0 5px rgb(51 51 51 / 10%);
+  overflow: auto;
   > h2 {
     margin-bottom: 4px;
     padding: 5px 20px;
