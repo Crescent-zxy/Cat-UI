@@ -1,6 +1,6 @@
 # Cat-UI
 * 一个基于 Vue3 / TypeScript 的 UI 库
-* 预览地址：http://crescent-zxy.gitee.io/cat-ui/
+* 预览地址：https://crescent-zxy.github.io/Cat-UI/index.html
 
 ## 运行步骤
 
